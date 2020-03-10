@@ -209,6 +209,22 @@ class PythonAT36 < Formula
       (libexec/"bin").install_symlink (bin/versioned_name).realpath => unversioned_name
     end
 
+    {
+      "easy_install-3" => "easy_install-3.6",
+      "easy_install" => "easy_install-3",
+      "pip3" => "pip3.6",
+      "pip" => "pip3",
+      "python3" => "python3.6",
+      "python" => "python3",
+      "python3m" => "python3.6m",
+      "python3m-config" => "python3.6m-config",
+      "pyvenv-3" => "pyvenv-3.6",
+      "pyvenv" => "pyvenv-3",
+      "wheel" => "wheel3",
+    }.each do |unversioned_name, versioned_name|
+      (bin).install_symlink (bin/versioned_formula).realpath => unversioned_name
+    end
+
     # post_install happens after link
     %W[pip#{xy} easy_install-#{xy}].each do |e|
       (HOMEBREW_PREFIX/"bin").install_symlink bin/e
