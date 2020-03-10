@@ -9,7 +9,7 @@ Python Version | Latest revision
 Python 3.5     | 3.5.9
 Python 3.6     | 3.6.10
 Python 3.7     | 3.7.6
-Python 3.8     | 3.8.1
+Python 3.8     | 3.8.2
 
 ## Installing formulae
 
@@ -30,16 +30,16 @@ You can use it to create a virtual environment by passing full path to the Pytho
 In order to update to latest version of `pip`, `setuptools` and `wheel`, use following command:
 
 ```bash
-/usr/local/opt/python@3.X/bin/python3.X -mpip install -U pip setuptools wheel
+/usr/local/opt/python@3.X/bin/python3.X -m pip install -U pip setuptools wheel
 ```
 
 ## Python 2.7
 
-Python 2.7 has been removed from this repository in early January 2020 after it reached end-of-life. See #46 for details.
+Python 2.7 has been removed from this repository in early January 2020 after it reached end-of-life. See [#46][46] for details.
 
 ## Acknowledgement
 
-This repository started as a fork of the [zoidbergwill/homebrew-python][1].
+This repository started as a fork of the [sashkab/homebrew-python][1].
 
-[1]: https://github.com/zoidbergwill/homebrew-python
+[1]: https://github.com/sashkab/homebrew-python
 [46]: https://github.com/sashkab/homebrew-python/issues/46

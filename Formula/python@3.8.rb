@@ -1,8 +1,8 @@
 class PythonAT38 < Formula
   desc "Interpreted, interactive, object-oriented programming language"
   homepage "https://www.python.org/"
-  url "https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tar.xz"
-  sha256 "75894117f6db7051c1b34f37410168844bbb357c139a8a10a352e9bf8be594e8"
+  url "https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tar.xz"
+  sha256 "2646e7dc233362f59714c6193017bb2d6f7b38d6ab4a0cb5fbac5c36c4d845df"
   revision 2
   head "https://github.com/python/cpython.git", :branch => "3.8"
 
